@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+
+.stop-watch{
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+
+    font-size:80px;
+    color:rgb(195, 137, 223);
+    text-align:right;
+    
+    font-family: 'Inconsolata', monospace;
+}
+
+.sotp-watch-fade{
+    opacity:0;
+}
+
+.stop-watch-fade-in{
+    
+    opacity:100;
+}
+
+.milisecond-part{
+    font-size:20px;
+}

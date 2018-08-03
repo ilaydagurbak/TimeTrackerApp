@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+:root {
+    --main-bg-color: #d9ebeb;    
+    --footer-color: #111111;    
+    --orange-color: #e78215;
+    --orange-color-buttons: #fe661f;
+    --orange-color-burnt: #fe261f;
+    --gray-bg-color: #444444;
+    --wight-color: #ffffff;
+
+    --main-buttons-height:50px;
+    --main-buttons-height-X2:60px;
+    --main-buttons-height-X3:150px;
+
+    --font-size-header:30px;
+}
+
+*{
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: var(--main-bg-color);
+    font-family: 'Julius Sans One', sans-serif;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+h1 { 
+    color: rgb(148, 19, 212);
+    font-size: var(--font-size-header); 
+    font-weight: 5; 
+    margin:0;
+}
+
+.headersection{
+    width:100%;
+    background-color: var(--main-bg-color);
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+
+    border-bottom-width:2px;
+    border-bottom-color: var(--orange-color);
+    border-bottom-style: solid;
+    margin:0;
+}
+
+.main-button{
+    width:50%;
+    height:var(--main-buttons-height);
+}
+
+button {
+    background-color: var(--gray-bg-color); 
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 40px;
+
+    border-width:1px;
+    border-color: var(--main-bg-color);
+    border-style: solid;
+
+    border-top-style:none;
+    border-bottom-style:none;
+    
+
+    font-family: 'Noto Sans', sans-serif;
+}
+
+button:hover {
+    background: var(--orange-color-buttons); 
+}
+
+button:active  {
+    -moz-transition: all .02s ease-in;
+    -o-transition: all .02s ease-in;
+    -webkit-transition: all .02s ease-in;
+    background: var(--orange-color-burnt);
+}
+
+button:focus{
+    outline:0;
+}
+
+    @media only screen and (max-height: 600px) {
+        [class*="stop-watch"] {
+            margin-top:50px;
+        }
+    }
+    @media only screen and (min-height: 600px) {
+        [class*="stop-watch"] {
+            margin-top:150px;
+        }
+    }
+
+.stop-watch-toggle{
+    width:100%;
+    background-color:var(--main-bg-color);
+    height: var(--main-buttons-height-X2);
+    font-size:var(--font-size-header);
+    text-decoration: none;
+    margin:0;
+}
+
+
+@media only screen and (min-width: 600px) {
+    [class*="stop-watch-toggle"] {
+        font-size: 40px;
+        color: rgb(148, 19, 212);
+        width:50%;
+        height: var(--main-buttons-height-X3);
+    }
+}
+
+.stop-watch-toggle:hover{
+    background-color:var(--main-bg-color);
+    color:var(--orange-color-buttons);
+}
+
+.save-record-button{
+    width:100%;
+    font-size:var(--font-size-header);
+    height: var(--main-buttons-height-X3);
+}
+
+input,textarea{
+    width:100%;
+    background-color:#777;
+    /*border-radius:*/
+    border: 2px solid var(--gray-bg-color) ;
+    font-family: 'Julius Sans One', sans-serif;
+    color:#fff;
+    font-size:var(--font-size-header);
+    text-align: center;
+    display:block;
+}
+input::selection,textarea::selection{
+    color:var(--orange-color);
+    background-color:#fff;
+}
+
+label{
+    display:block;
+    color:#fff;
+    font-size:var(--font-size-header);
+    margin:4px;
+}
+
+.please-wait{
+    color:#fff;
+    margin-top:100px;
+    font-size:var(--font-size-header);
+    text-align:center;
+}
+
+li{
+    list-style-type: none;
+    font-size:var(--font-size-header);
+    color:#fff;
+    height:30px;
+    padding:0;
+    margin:0;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    overflow-y:scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+p { color: #adb7bd; font-family: 'Lucida Sans', Arial, sans-serif; font-size: 16px; line-height: 26px; text-indent: 30px; margin: 0; }
+
+a { color: #fe921f; text-decoration: underline; }
+
+a:hover { color: #ffffff }
+
+.date { background: #fe921f; color: #ffffff; display: inline-block; font-family: 'Lato', sans-serif; font-size: 12px; font-weight: bold; line-height: 12px; letter-spacing: 1px; margin: 0 0 30px; padding: 10px 15px 8px; text-transform: uppercase; }

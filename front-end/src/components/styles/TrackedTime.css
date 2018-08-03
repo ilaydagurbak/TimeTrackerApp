@@ -1,0 +1,36 @@
+
+li{
+    height:60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.li-title{
+    color:rgba(89, 88, 170, 0.986);
+    font-size: 25px;
+    margin:0;
+    padding:0;
+    padding-top:10px;
+    padding-bottom:10px;
+    display:inline-block;
+    text-align: center;
+}
+
+ul{
+    width:100%;
+}
+
+.li-parts{
+    display:inline-block;
+    padding:0;
+    white-space: nowrap;
+    overflow:hidden;
+}
+
+.list-1{
+    background-color:#202020;
+}
+
+.list-2{
+    background-color:#252525;
+}
